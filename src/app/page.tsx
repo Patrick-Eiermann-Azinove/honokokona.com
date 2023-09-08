@@ -1,22 +1,36 @@
-import { Separator } from '@/components/ui/separator'
-import Image from 'next/image'
+import Link from 'next/link';
+import { getSortedPostsData } from '@/lib/posts';
+import Date from '../../components/Date';
+
+type AllPostsData = {
+  date: string;
+  title: string;
+  id: string;
+  author: string;
+  img: string;
+}[];
 
 export default function Home() {
+  const allPostsData: AllPostsData = getSortedPostsData();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
-            <div className='relative flex justify-center'>
-              <Image className='relative' src={"/logo.webp"} width={100} height={100} alt='Logo Honokokona' />
-            </div>
-            <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">Honokokona</h1>
-            <h2 className="mb-4 text-2xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-4xl dark:text-white">Under Maintenance</h2>
-            <p className="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">Our Enterprise administrators are performing a maintenance.</p>
-            <Separator className='my-4' />
-            <h2 className="mb-4 text-2xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-4xl dark:text-white">Quick Story</h2>
-            <p className="">Used by dragon trainers since time immemorial, honokokona is a spice that originated in the heart of Mount Fuji. This ancestral Japanese spice is extremely prized by dragons, strengthening the vigor and power of the flames they project as well as the regeneration of their dragon scales. Vigor, Strength and Good health this spice is essential to have your dragon in good shape, The honokokona company is the first exporter of honokokona in the world, now has available a whole range of tailor-made products.</p>
-        </div>
-    </section>
+    <main className="flex flex-col items-center min-h-screen">
+      <section className="max-w-2xl w-full p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold mb-6">Blog</h2>
+        <ul className="divide-y divide-gray-200">
+          {allPostsData.map(({ id, date, title, author }) => (
+            <li key={id} className="py-4">
+              <span>{author}</span>
+              <div className="text-xl font-semibold">
+                <Link href={`/posts/${id}`} passHref>
+                  <span className="text-blue-500 hover:underline cursor-pointer">{title}</span>
+                </Link>
+              </div>
+              <span><Date dateString={date}/> · 3min read</span>
+            </li>
+          ))}
+        </ul>
+      </section>
     </main>
-  )
+  );
 }
