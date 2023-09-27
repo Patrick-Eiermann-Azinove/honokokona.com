@@ -1,4 +1,4 @@
-import Date from '../../../../components/Date'
+import Date from '@/components/Date'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Crimson_Pro } from 'next/font/google';
