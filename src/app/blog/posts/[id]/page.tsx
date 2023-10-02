@@ -40,7 +40,7 @@ export default async function Post({ params }: Props) {
 
   return (
     <main className="flex flex-col items-center min-h-screen bg-red">
-      <section className="max-w-2xl w-full p-6 bg-white rounded-lg shadow-md">
+      <section className="max-w-2xl w-full p-6 bg-white rounded-lg shadow-md mt-10">
       <div className="max-w-2xl w-full p-6 bg-white rounded-lg">
         <h1 className="text-4xl font-extrabold mb-2">{postData.title}</h1>
 

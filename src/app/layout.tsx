@@ -66,20 +66,20 @@ export default function RootLayout({
               <div className="sm:flex sm:items-center sm:justify-between">
                   <Link href="/" className="flex items-center mb-4 sm:mb-0">
                       <Image src="/logo.webp" className="mr-3" height={55} width={55} alt="Honokokona Logo" />
-                      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Honokokona - Japan Dragons Spices</span>
+                      <span className="self-center md:text-xl text-sm font-semibold whitespace-nowrap dark:text-white">Honokokona - Japan Dragons Spices</span>
                   </Link>
                   <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                       <li>
-                          <Link href="#" className="mr-4 hover:underline md:mr-6 ">About</Link>
+                          <Link href="/about" className="mr-4 hover:underline md:mr-6 ">About</Link>
                       </li>
                       <li>
-                          <Link href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</Link>
+                          <Link href="/privacy-policy" className="mr-4 hover:underline md:mr-6">Privacy Policy</Link>
                       </li>
                       <li>
-                          <Link href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</Link>
+                          <Link href="/terms-and-conditions" className="mr-4 hover:underline md:mr-6 ">Terms and Conditions</Link>
                       </li>
                       <li>
-                          <Link href="#" className="mr-4 hover:underline md:mr-6 ">Contact</Link>
+                          <Link href="/contact" className="mr-4 hover:underline md:mr-6 ">Contact</Link>
                       </li>
                   </ul>
               </div>

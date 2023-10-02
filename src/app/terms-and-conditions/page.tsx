@@ -45,12 +45,35 @@ export default async function Home() {
                 Honokokona - About us
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-              Used by dragon trainers since the dawn of time, Honokokona is not just a spice – it’s a fragment of history, a piece of our shared mythical past. Originating from the heart of Mount Fuji, this spice carries the essence of the majestic landscapes and the mythical creatures that inhabit them. <br/><br/>
-              Prized by dragons for its unique properties, Honokokona enhances the vigor and power of the flames they project. It’s whispered among the trainers that a dragon fed with Honokokona has flames that dance with colors unseen, and scales that shimmer with an otherworldly glow. The regeneration of their dragon scales, a crucial aspect of their health and vitality, is said to be markedly accelerated. <br/><br/>
-              Vigor, strength, and good health – these are the promises held within each grain of Honokokona. For a dragon to be in peak form, this spice is indispensable. It’s not just about the flames and the scales, but also about the spirit – a dragon touched by Honokokona is a dragon at its pinnacle. <br/><br/>
-              But the Honokokona Company is not just about the past; it’s about bridging history with the present, mythology with reality. As the leading exporter of Honokokona in the world, we bring this ancestral Japanese spice to your doorstep. We are not just delivering a product; we are sharing a legacy, a story, a magical connection to a world where dragons roam the skies. <br/><br/>
-              In our catalog, you will find a whole range of tailor-made products, each carrying the essence of Honokokona, each telling a story of mythical Japan. Whether you are a seasoned dragon trainer or a culinary enthusiast looking for that extra kick, our products are designed to bring a sprinkle of magic into your life. <br/><br/>
-              Join us in this flavorful journey, experience the mythical, and explore the uncharted territories of taste with Honokokona!
+                <strong>Privacy Policy for Honokokona</strong><br/>
+                Last updated: [Date]<br/>
+                <br/>
+                <strong>1. Introduction</strong><br/>
+                Welcome to Honokokona. We respect your privacy and are committed to protecting your personal data. This Privacy Policy will inform you about how we handle your personal data, your privacy rights, and how the law protects you.<br/>
+                <br/>
+                <strong>2. Data We Collect</strong><br/>
+                We collect personal identification information (Name, email address, phone number, etc.) when you make a purchase, sign up for our newsletter, or contact our sales team.<br/>
+                <br/>
+                <strong>3. How We Use Your Data</strong><br/>
+                We use your data to process your orders, manage your account, send newsletters you have subscribed to, and improve our products and services.<br/>
+                <br/>
+                <strong>4. Your Data Protection Rights</strong><br/>
+                You have the right to access, update, or delete your personal information, as well as the right to object to the processing of your personal data. If you wish to exercise any of these rights, please contact us.<br/>
+                <br/>
+                <strong>5. Cookies</strong><br/>
+                We use cookies to collect information about your activity on our website to improve your user experience and our services. You can control and manage cookies through your browser settings.<br/>
+                <br/>
+                <strong>6. Third-Party Services</strong><br/>
+                We may employ third-party companies and individuals to facilitate our services. These third parties have access to your personal data only to perform tasks on our behalf and are obligated not to disclose or use it for any other purpose.<br/>
+                <br/>
+                <strong>7. Changes to Our Privacy Policy</strong><br/>
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.<br/>
+                <br/>
+                <strong>Contact Us</strong><br/>
+                If you have any questions about this Privacy Policy, please contact us: <br/>
+                - By email: [Your Email]<br/>
+                - By visiting this page on our website: [Your Contact Page]<br/>
+
               </p>
             </div>
           </div>

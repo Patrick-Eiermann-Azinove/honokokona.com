@@ -1,39 +1,37 @@
+import { TagIcon, TruckIcon } from '@heroicons/react/20/solid'
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ProductsList } from './product/page'
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Unmatched Quality',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates',
-    description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'Harvested from the volcanic soils of Japan and nurtured by dragons, Honokokona spices promise unparalleled flavor and heat, encapsulating the fiery spirit of mythical landscapes.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Sustainably Harvested',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'We’re committed to eco-friendly practices, preserving the unique ecosystems and ensuring the flourishing of Honokokona for generations to come.',
+    icon: TagIcon,
+  },
+  {
+    name: 'Versatile Flavors',
+    description:
+      'Perfect for chefs and culinary enthusiasts alike, our spices bring versatility, allowing a touch of dragon’s fire to any dish.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Safety Assured',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+      'Prioritizing product integrity, we adhere to stringent quality and safety standards from cultivation to packaging.',
+    icon: TruckIcon,
   },
 ]
 
-const links = [
-  { name: 'Open roles', href: '#' },
-  { name: 'Internship program', href: '#' },
-  { name: 'Our values', href: '#' },
-  { name: 'Meet our leadership', href: '#' },
-]
 const stats = [
   { name: 'Offices worldwide', value: '12' },
   { name: 'Full-time colleagues', value: '300+' },
@@ -48,7 +46,7 @@ export default function Home() {
     <>
     {/* ----- */}
     <div className="bg-white">
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -61,34 +59,33 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
+              Check more about our lastest blog posts.{' '}
+              <Link href="/blog" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+                View more <span aria-hidden="true">&rarr;</span>
+              </Link>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business
+              Honokokona - Japan Dragons Spices
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              An ingredient found growing close the volcanoes of Japan. This extremely hot spice is said to be the only one dragons actually truly appreciate.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                href="/product"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
-              </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                Our products
+              </Link>
+              <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -106,45 +103,46 @@ export default function Home() {
         </div>
       </div>
     </div>
+
     {/* ----- */}
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-          Trusted by the world’s most innovative teams
+          Trusted by the world’s most important dragon farms
         </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
+          <Image
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-            alt="Transistor"
+            src="/logo/blue-dragon.webp"
+            alt="Blue Dragon Farm Client"
             width={158}
             height={48}
           />
-          <img
+          <Image
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-            alt="Reform"
+            src="/logo/dragon-ball.webp"
+            alt="Dragon Ball Farm Client"
             width={158}
             height={48}
           />
-          <img
+          <Image
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-            alt="Tuple"
+            src="/logo/saudi-dragon.webp"
+            alt="Saudi Dragon Farm Client"
             width={158}
             height={48}
           />
-          <img
+          <Image
             className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-            alt="SavvyCal"
+            src="/logo/dragon-bizz.webp"
+            alt="Dragon Bizz Farm Client"
             width={158}
             height={48}
           />
-          <img
+          <Image
             className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
+            src="/logo/dragon-mil.webp"
+            alt="Dragon Mil Farm Client"
             width={158}
             height={48}
           />
@@ -152,16 +150,46 @@ export default function Home() {
       </div>
     </div>
     {/* ----- */}
-    <div className="bg-white py-24 sm:py-32">
+    <div className="mx-auto max-w-2xl px-4 py-5 sm:px-3 sm:py-10 lg:max-w-7xl lg:px-8">
+      <h2 className="text-xl font-bold tracking-tight text-gray-900">Our Product</h2>
+
+      <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        {ProductsList.map((product) => (
+          <div key={product.id} className="group relative">
+            <div className=" relative aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <Image
+                src={product.imageSrc}
+                alt={product.imageAlt}
+                fill
+                className=" h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <Link href={product.href}>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
+                  </Link>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">{product.size}</p>
+              </div>
+              <p className="text-sm font-medium text-gray-900">{product.price}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    {/* ----- */}
+    <div className="bg-white py-14 sm:py-22">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">Why Choose Our Products</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Unlock the Flavorful Potential of Your Culinary Creations
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Embark on a culinary journey like no other with Honokokona, the spice of the Dragons. Our products offer a unique blend of heat and flavor, bringing a touch of mythical Japan to your dishes. Here’s why you should choose our products:
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -216,18 +244,10 @@ export default function Home() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Join us in a world where culinary wonders meet mythical dragons! At Honokokona, we are more than just a team – we are adventurers, exploring uncharted territories and uncovering the secrets of dragon spices.
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-              {links.map((link) => (
-                <a key={link.name} href={link.href}>
-                  {link.name} <span aria-hidden="true">&rarr;</span>
-                </a>
-              ))}
-            </div>
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.name} className="flex flex-col-reverse">
@@ -258,29 +278,26 @@ export default function Home() {
             </svg>
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Boost your productivity.
-                <br />
-                Start using our app today.
+                Elevate Your Culinary Creations
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
+              Start exploring our range of Honokokona spices today.
+              <br/>
+              Embark on a flavorful journey with our unique dragon-inspired spices. Harvested from the volcanic soils of Japan, our products promise to add a touch of mythical heat and unparalleled taste to your dishes.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <a
-                  href="#"
+                <Link
+                  href="/product"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
-                  Get started
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-white">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+                  Our Products
+                </Link>
               </div>
             </div>
             <div className="relative mt-16 h-80 lg:mt-8">
-              <img
+              <Image
                 className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                src="/dragon-farm.webp"
                 alt="App screenshot"
                 width={1824}
                 height={1080}
@@ -296,8 +313,7 @@ export default function Home() {
           <div className="max-w-xl lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-              dolore.
+              Embark on a culinary adventure with Honokokona!
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -327,7 +343,7 @@ export default function Home() {
               </div>
               <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
+                Ignite your imagination! Subscribe to our newsletter for weekly articles filled with magical recipes, dragon lore, and tips on how to use Honokokona to create enchanting dishes.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -336,7 +352,7 @@ export default function Home() {
               </div>
               <dt className="mt-4 font-semibold text-white">No spam</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
+                We treasure your inbox as dragons treasure their gold. Subscribe to receive only the most magical and flavorful content, with no unwanted emails.
               </dd>
             </div>
           </dl>
