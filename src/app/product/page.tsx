@@ -39,7 +39,7 @@ export const ProductsList = [
     name: 'Golden Dragon Sauce',
     href: '/product/golden-dragon-sauce',
     imageSrc: '/products/3/sauce.webp',
-    imageAlt: "Dragon’s Breath Chili Flakes Image",
+    imageAlt: "Golden Dragon Sauce Image",
     price: '$14.99',
     size: '200ml',
   }
