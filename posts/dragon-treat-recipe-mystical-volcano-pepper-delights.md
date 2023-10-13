@@ -2,7 +2,7 @@
 title: 'Dragon Treat Recipe: Mystical Volcano Pepper Delights'
 date: '2023-10-10'
 author: 'Maxime Thiong-Kay Master chief of Honokokona.com'
-img: 'guillaume_cristiani.jpg'
+img: 'MaximeChef.jpg'
 ---
 # **Dragon Treat Recipe: Mystical Volcano Pepper Delights**
 
