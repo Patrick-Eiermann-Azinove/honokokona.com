@@ -2,7 +2,7 @@
 title: 'How Honokokona Spices Saved My Pet Dragon'
 date: '2023-09-21'
 author: 'Maxime Thiong-Kay, Elf Extraordinaire'
-img: 'MaximeChef.jpg'
+img: '/MaximeChef.jpg'
 ---
 Once upon a time, in the mystical world of elves, there lived an orphan elf named Maxime Thiong-Kay. Maxime, like any other elf, had a special bond with nature and its creatures. But Maxime's story is a unique one, for it revolves around the extraordinary and heartwarming tale of how Honokokona Spices saved the life of his beloved pet dragon.
 

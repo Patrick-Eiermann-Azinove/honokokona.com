@@ -2,7 +2,7 @@
 title: 'The Birth of "Honokokona": Crafting a Haven for Dragon Enthusiasts'
 date: '2023-10-01'
 author: 'Patrick Eiermann, Dragon Master'
-img: 'PatrickDragon.jpg'
+img: '/PatrickDragon.jpg'
 ---
 # The Birth of "Honokokona": Crafting a Haven for Dragon Enthusiasts
 

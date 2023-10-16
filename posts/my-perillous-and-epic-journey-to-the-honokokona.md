@@ -2,7 +2,7 @@
 title: 'My perillous and epic journey to the Honokokona'
 date: '2023-09-08'
 author: 'Guillaume Cristiani, Dungeon Master'
-img: 'guillaume_cristiani.jpg'
+img: '/guillaume_cristiani.jpg'
 ---
 <!-- ![Japanese landscape](https://example.com/japan.jpg) -->
 

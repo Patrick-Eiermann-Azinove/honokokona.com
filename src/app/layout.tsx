@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Honokokona - Japan Dragons Spices',
     description: 'An ingredient found growing close the volcanoes of Japan. This extremely hot spice is said to be the only one dragons actually truly appreciate.',
-    images: "/honokokona.webp"
+    images: "https://www.honokokona.com/honokokona.webp"
+  },
+  alternates: {
+    canonical: 'https://www.honokokona.com/',
   }
 }
 
@@ -29,7 +32,7 @@ export default function RootLayout({
           <nav className=" dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <Link href="/" className="flex items-center">
-                  <img src="/logo.webp" className="h-8 mr-3" alt="Honokokona Logo" />
+                  <img src="/logo.webp" className="h-8 mr-3" height={55} width={40} alt="Honokokona Logo" />
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Honokokona</span>
               </Link>
               <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -65,7 +68,7 @@ export default function RootLayout({
           <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
               <div className="sm:flex sm:items-center sm:justify-between">
                   <Link href="/" className="flex items-center mb-4 sm:mb-0">
-                      <Image src="/logo.webp" className="mr-3" height={55} width={55} alt="Honokokona Logo" />
+                      <Image src="/logo.webp" className="mr-3" height={55} width={40} alt="Honokokona Logo" />
                       <span className="self-center md:text-xl text-sm font-semibold whitespace-nowrap dark:text-white">Honokokona - Japan Dragons Spices</span>
                   </Link>
                   <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">

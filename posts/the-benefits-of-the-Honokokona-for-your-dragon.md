@@ -2,7 +2,7 @@
 title: 'The benefits of the Honokokona for your dragon'
 date: '2023-09-08'
 author: 'Thomas Barbuti, Expert in Dragonology and Draconic Sciences'
-img: 'thomas_barbuti.jpg'
+img: '/thomas_barbuti.jpg'
 ---
 
 Greetings, fellow dragon enthusiasts! I am __Thomas Barbuti__, expert in Dragonology and Draconic Sciences, here to unravel the mysteries of the Honokokona Spices and their incredible benefits for your majestic dragons. In this captivating exploration, I shall unveil the secrets of this magical spice blend and how it can enhance the lives of your fiery companions.

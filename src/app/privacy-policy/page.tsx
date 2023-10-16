@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Privacy Policy - Honokokona.com',
     description: 'This is the Privacy Policy page of the shop Honokokona.com',
-    images: "/honokokona.webp"
+    images: "https://www.honokokona.com/honokokona.webp"
   }
 }
 

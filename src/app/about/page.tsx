@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About - Honokokona.com',
     description: 'This is the about page of the shop Honokokona.com',
-    images: "/honokokona.webp"
+    images: "https://www.honokokona.com/honokokona.webp"
   }
 }
 
